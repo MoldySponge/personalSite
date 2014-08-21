@@ -1,15 +1,15 @@
 /*# Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+# You can use CoffeeScript in this file:
 */
 $(document).ready(function () {
 	$(window).load(function () {
-		$(".picture").animate({left:'15em', opacity:'1.0'}, 750);
-		$(".experience").animate({left:'31em', opacity:'1.0'}, 750);
-		$(".education").animate({left:'15em', opacity:'1.0'}, 1000);
-		$(".website").animate({left:'31em', opacity:'1.0'}, 1000);
-		$(".resume").animate({left:'15em', opacity:'1.0'}, 1200);
-		$(".contact").animate({left:'31em', opacity:'1.0'}, 1200);
+		$(".picture").animate({left:'33%', opacity:'1.0'}, 750);
+		$(".experience").animate({left:'45%', opacity:'1.0'}, 750);
+		$(".education").animate({left:'33%', opacity:'1.0'}, 1000);
+		$(".website").animate({left:'45%', opacity:'1.0'}, 1000);
+		$(".resume").animate({left:'33%', opacity:'1.0'}, 1200);
+		$(".contact").animate({left:'45%', opacity:'1.0'}, 1200);
 	});
 	
 	/*
@@ -61,7 +61,7 @@ $(document).ready(function () {
 	
 	//back clicked
 	$(".back").click(function () {
-		$(".experience").animate({left:'31em', opacity:'1.0'},1200);
+		$(".experience").animate({left:'45%', opacity:'1.0'},1200);
 		$(".experience").css("visibility", "visible");
 		
 		$(".back").animate({opacity:'0.0'});
@@ -98,19 +98,19 @@ $(document).ready(function () {
 		$(".picture").css("visibility", "visible");
 		$(".education").animate({opacity: "1.0",top:'21em'},1200);
 		$(".education").css("visibility", "visible");
-		$(".website").animate({opacity: "1.0", left:'31em'},600);
+		$(".website").animate({opacity: "1.0", left:'45%'},600);
 		$(".website").css("visibility", "visible");
 		$(".website").animate({top:'21em'},600);
 		$(".resume").animate({opacity: "1.0",top:'37em'},1200);
 		$(".resume").css("visibility", "visible");
-		$(".contact").animate({opacity: "1.0",left:'31em'},600);
+		$(".contact").animate({opacity: "1.0",left:'45%'},600);
 		$(".contact").animate({top:'37em'},600);
 		$(".contact").css("visibility", "visible");
 	});
 	
 	//Picture clicked
 	$(".picture").click(function () {
-		$(".picture").animate({left:'15em'},800);
+		$(".picture").animate({left:'33%'},800);
 		
 		$(".back").animate({opacity:'1.0'},1600, pictureClicked());
 		$(".back").css("visibility", "visible");
@@ -140,7 +140,7 @@ $(document).ready(function () {
 	
 	//Experience clicked
 	$(".experience").click(function () {
-		$(".experience").animate({left:'15em'},800);
+		$(".experience").animate({left:'33%'},800);
 		
 		$(".back").animate({opacity:'1.0'},1600, experienceClicked());
 		$(".back").css("visibility", "visible");
@@ -241,7 +241,7 @@ $(document).ready(function () {
 	//Website clicked
 	$(".website").click(function () {
 		$(".website").animate({top:'5em'},400);
-		$(".website").animate({left:'15em'},800);
+		$(".website").animate({left:'33%'},800);
 		
 		$(".back").animate({opacity:'1.0'},1600, websiteClicked());
 		$(".back").css("visibility", "visible");
@@ -303,7 +303,7 @@ $(document).ready(function () {
 	//Contact clicked
 	$(".contact").click(function () {
 		$(".contact").animate({top:'5em'},400);
-		$(".contact").animate({left:'15em'},800);
+		$(".contact").animate({left:'33%'},800);
 		
 		$(".back").animate({opacity:'1.0'},1600, contactClicked());
 		$(".back").css("visibility", "visible");
