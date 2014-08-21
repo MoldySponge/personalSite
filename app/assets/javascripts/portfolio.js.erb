@@ -4,12 +4,15 @@
 */
 $(document).ready(function () {
 	$(window).load(function () {
+		var height = $( window ).height();
+		var nameNode = document.getElementsByClassName('picture');
+		nameNode[0].innerHTML = height;
 		$(".picture").animate({left:'33%', opacity:'1.0'}, 750);
 		$(".experience").animate({left:'45%', opacity:'1.0'}, 750);
 		$(".education").animate({left:'33%', opacity:'1.0'}, 1000);
 		$(".website").animate({left:'45%', opacity:'1.0'}, 1000);
 		$(".resume").animate({left:'33%', opacity:'1.0'}, 1200);
-		$(".contact").animate({left:'45%', opacity:'1.0'}, 1200);
+		$(".contact").animate({left:'45%', opacity:'1.0'}, 1200);			
 	});
 	
 	/*
@@ -118,14 +121,14 @@ $(document).ready(function () {
 		$(".line").animate({opacity:'1.0', width:'540px'},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#000000");
-		
-		var text = "<strong><div class='pictureTextHeading'>ABOUT</div></strong><br>Hi! Welcome to the online portfolio of Matthew Seagle. Whether you are here because I am a possible candidate for a job or simply because you have stumbled here among the reaches of the internet I hope you enjoy your stay." +
+			
+		var text = "<strong><div class='pictureTextHeading'>ABOUT</div></strong><br>THi! Welcome to the online portfolio of Matthew Seagle. Whether you are here because I am a possible candidate for a job or simply because you have stumbled here among the reaches of the internet I hope you enjoy your stay." +
 		" If you are interested in learning more about me personally and professionally go ahead and have a look around.<br><br><strong><div class='pictureTextHeading'>HOBBIES/PERSONAL INTERESTS</div></strong><br>In my spare time I enjoy running, working out, hiking, reading (almost exclusively theology, apologetics, and philosophy)," +
 		" riding motorcycles, as well as playing a few video games. If I have the opportunity, camping and skiing are welcome adventures but have become rare as I've become busier in life.<br>" +
 		" <br>On the technical side of things I've been working with and building computers since I was 10 (1995). I often do maintenance and virus/malware removal for anyone who needs it. I have built custom setups for friends and family and always research and build my own computer for personal use." +
 		" I enjoy keeping up with the latest technology from a software and hardware perspective.<br>" +
 		"<br> As a side note, I spend most of my time on Mint 15 unless I need windows for a game.";
-		pictureNode = document.getElementsByClassName('text');
+		pictureNode = document.getElementsByClassName('text');		
 		pictureNode[0].innerHTML = text;
 		
 		$(".text").animate({opacity:'1.0'}, 1700);		
@@ -374,6 +377,6 @@ $(document).ready(function () {
 	  $(".education").css("visibility", "hidden");
 	  $(".website").css("visibility", "hidden");
 	  $(".resume").css("visibility", "hidden");
-	}
+	}	
 });
 
