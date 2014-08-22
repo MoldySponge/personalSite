@@ -10601,6 +10601,7 @@ $(document).ready(function () {
 	var squareWidth;
 	var squareHeight; 
 	var fromRight = "100%";
+	var fontSize;
 	$(window).load(function () {                
 		getWindowSize();
 		calculateSquareSize();
@@ -10637,7 +10638,11 @@ $(document).ready(function () {
 		toMiddle = 10 + squareWidth + 10;
 		toMiddle = toMiddle + "px";
 		fromTopSecond = 10 + squareHeight + 10 + "px";
-		fromTopThird = 30 + squareHeight + "px";
+		fromTopThird = 30 + (2*squareHeight) + "px";
+		
+		fontSize = "5em";
+
+		$("BODY").css("font-size",fontSize);
 		
 		$(".picture").css("width", (squareWidth + "px"));
 		$(".picture").css("height", (squareHeight + "px"));
@@ -10710,7 +10715,7 @@ $(document).ready(function () {
 	
 	//back clicked
 	$(".back").click(function () {
-		$(".experience").animate({left:'45%', opacity:'1.0'},1200);
+		$(".experience").animate({left:toMiddle, opacity:'1.0'},1200);
 		$(".experience").css("visibility", "visible");
 		
 		$(".back").animate({opacity:'0.0'});
@@ -10743,17 +10748,17 @@ $(document).ready(function () {
 		$(".postgresqlLogo").animate({opacity:'0.0'},1600);
 		$(".postgresqlLogo").css("visibility", "hidden");
 		
-		$(".picture").animate({opacity: "1.0", top:'20px'},1200);
+		$(".picture").animate({opacity: "1.0", top:fromTop},1200);
 		$(".picture").css("visibility", "visible");
-		$(".education").animate({opacity: "1.0",top:'250px'},1200);
+		$(".education").animate({opacity: "1.0",top:fromTopSecond},1200);
 		$(".education").css("visibility", "visible");
-		$(".website").animate({opacity: "1.0", left:'45%'},600);
+		$(".website").animate({opacity: "1.0", left:toMiddle},600);
 		$(".website").css("visibility", "visible");
-		$(".website").animate({top:'250px'},600);
-		$(".resume").animate({opacity: "1.0",top:'480px'},1200);
+		$(".website").animate({top:fromTopSecond},600);
+		$(".resume").animate({opacity: "1.0",top:fromTopThird},1200);
 		$(".resume").css("visibility", "visible");
-		$(".contact").animate({opacity: "1.0",left:'45%'},600);
-		$(".contact").animate({top:'480px'},600);
+		$(".contact").animate({opacity: "1.0",left:toMiddle},600);
+		$(".contact").animate({top:fromTopThird},600);
 		$(".contact").css("visibility", "visible");
 	});
 	
@@ -10764,7 +10769,7 @@ $(document).ready(function () {
 		$(".back").animate({opacity:'1.0'},1600, pictureClicked());
 		$(".back").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:'540px'},800);
+		$(".line").animate({opacity:'1.0', width:(width-20)},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#000000");
 			
@@ -10789,7 +10794,7 @@ $(document).ready(function () {
 	
 	//Experience clicked
 	$(".experience").click(function () {
-		$(".experience").animate({left:'33%'},800);
+		$(".experience").animate({left:fromLeft},800);
 		
 		$(".back").animate({opacity:'1.0'},1600, experienceClicked());
 		$(".back").css("visibility", "visible");
@@ -10804,7 +10809,7 @@ $(document).ready(function () {
 		$(".redlobsterLogo").animate({opacity:'1.0'}, 1600);
 		$(".redlobsterLogo").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:'550px'},800);
+		$(".line").animate({opacity:'1.0', width:(width-20)},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#339966");
 		
@@ -10842,7 +10847,7 @@ $(document).ready(function () {
 	
 	//Education clicked
 	$(".education").click(function () {
-		$(".education").animate({top:'20px'},800);
+		$(".education").animate({top:fromTop},800);
 		
 		$(".back").animate({opacity:'1.0'},1600, educationClicked());
 		$(".back").css("visibility", "visible");
@@ -10852,7 +10857,7 @@ $(document).ready(function () {
 		$(".wascLogo").animate({opacity:'1.0'}, 1600);
 		$(".wascLogo").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:'550px'},800);
+		$(".line").animate({opacity:'1.0', width:(width - 20)},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#336699");
 		
@@ -10889,8 +10894,8 @@ $(document).ready(function () {
 	
 	//Website clicked
 	$(".website").click(function () {
-		$(".website").animate({top:'20px'},400);
-		$(".website").animate({left:'33%'},800);
+		$(".website").animate({top:fromTop},400);
+		$(".website").animate({left:fromLeft},800);
 		
 		$(".back").animate({opacity:'1.0'},1600, websiteClicked());
 		$(".back").css("visibility", "visible");
@@ -10902,7 +10907,7 @@ $(document).ready(function () {
 		$(".postgresqlLogo").animate({opacity:'1.0'},1600);
 		$(".postgresqlLogo").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:'550px'},800);
+		$(".line").animate({opacity:'1.0', width:(width - 20)},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#FFCC66");
 		
@@ -10925,12 +10930,12 @@ $(document).ready(function () {
 	
 	//Resume clicked
 	$(".resume").click(function () {
-		$(".resume").animate({top:'20px'},800);		
+		$(".resume").animate({top:fromTop},800);		
 		
 		$(".back").animate({opacity:'1.0'},1600, resumeClicked());
 		$(".back").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:'550px'},800);
+		$(".line").animate({opacity:'1.0', width:(width - 20)},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#663399");
 		
@@ -10951,13 +10956,13 @@ $(document).ready(function () {
 
 	//Contact clicked
 	$(".contact").click(function () {
-		$(".contact").animate({top:'20px'},400);
-		$(".contact").animate({left:'33%'},800);
+		$(".contact").animate({top:fromTop},400);
+		$(".contact").animate({left:fromLeft},800);
 		
 		$(".back").animate({opacity:'1.0'},1600, contactClicked());
 		$(".back").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:'550px'},800);
+		$(".line").animate({opacity:'1.0', width:(width - 20)},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#780000");
 		
