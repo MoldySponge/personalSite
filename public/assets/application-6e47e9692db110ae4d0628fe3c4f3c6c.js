@@ -10642,8 +10642,8 @@ $(document).ready(function () {
 		fromTopSecond = 15 + squareHeight + 10 + "px";
 		fromTopThird = 30 + (2*squareHeight) + "px";
 		
-		backButtonWidth = (width / 2);
-		backButtonHeight = (height / 2);
+		backButtonWidth = (width / 4);
+		backButtonHeight = (height / 4);
 
 		fontSize = "4em";
 		lineHeight = "1em";		
@@ -10653,8 +10653,10 @@ $(document).ready(function () {
 		
 		
 
-		$(".back").css("top", (5 + squareHeight - backButtonHeight + "px"));
+		$(".back").css("top", ((5 + squareHeight - backButtonHeight) + "px"));
 		$(".back").css("left", toMiddle);
+		$(".back").css("width", (backButtonWidth + "px"));
+		$(".back").css("height", (backButtonHeight + "px"));
 
 		$(".text").css("left", fromLeft);
 		$(".text").css("top", (45 + squareHeight + "px"));
