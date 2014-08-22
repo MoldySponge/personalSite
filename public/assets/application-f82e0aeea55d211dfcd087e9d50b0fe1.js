@@ -10594,7 +10594,9 @@ $(document).ready(function () {
 	var width;
 	var height;
 	var fromLeft = "10px";
-	var squareWidth; 
+	var fromTop = "10px";
+	var squareWidth;
+	var squareHeight; 
 	var fromRight = "100%";
 	$(window).load(function () {                
 		getWindowSize();
@@ -10620,10 +10622,12 @@ $(document).ready(function () {
 	
 	function calculateSquareSize() {
 		squareWidth = ((width - 30) / 2);
+		squareHeight = ((height - 40) / 3);
 	}
 
 	function setupUI() {
-		$(".picture").css("width", squareWidth,"height",squareWidth);
+		$(".picture").css("width", squareWidth);
+		$(".picture").css("height", squareHeight);
 	}
 	
 	/*
