@@ -10637,10 +10637,10 @@ $(document).ready(function () {
 	function setupUI() {
 		toMiddle = 10 + squareWidth + 10;
 		toMiddle = toMiddle + "px";
-		fromTopSecond = 10 + squareHeight + 10 + "px";
+		fromTopSecond = 15 + squareHeight + 10 + "px";
 		fromTopThird = 30 + (2*squareHeight) + "px";
 		
-		fontSize = "5em";
+		fontSize = "4em";
 
 		$("BODY").css("font-size",fontSize);
 		
@@ -10764,7 +10764,7 @@ $(document).ready(function () {
 	
 	//Picture clicked
 	$(".picture").click(function () {
-		$(".picture").animate({left:'33%'},800);
+		$(".picture").animate({left:fromLeft},800);
 		
 		$(".back").animate({opacity:'1.0'},1600, pictureClicked());
 		$(".back").css("visibility", "visible");

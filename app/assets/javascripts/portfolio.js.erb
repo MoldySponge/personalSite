@@ -176,7 +176,7 @@ $(document).ready(function () {
 	
 	//Picture clicked
 	$(".picture").click(function () {
-		$(".picture").animate({left:'33%'},800);
+		$(".picture").animate({left:fromLeft},800);
 		
 		$(".back").animate({opacity:'1.0'},1600, pictureClicked());
 		$(".back").css("visibility", "visible");
