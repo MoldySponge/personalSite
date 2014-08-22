@@ -10654,6 +10654,7 @@ $(document).ready(function () {
 		$("li").css("line-height", lineHeight);
 		
 		$("br").css("line-height", lineHeight);
+		$("br").css("margin-top", lineHeight);
 
 		$(".back").css("top", ((5 + squareHeight - backButtonHeight) + "px"));
 		$(".back").css("left", toMiddle);
@@ -10810,7 +10811,8 @@ $(document).ready(function () {
 		pictureNode[0].innerHTML = text;
 		
 		$(".text").animate({opacity:'1.0'}, 1700);		
-		$(".text").css("visibility", "visible");		
+		$(".text").css("visibility", "visible");
+		$(".text").css("width", (width - 25));
 		
 		$(".experience").animate({opacity: "0.0"},"fast");
 		$(".education").animate({opacity: "0.0"},"fast");
@@ -10863,7 +10865,8 @@ $(document).ready(function () {
 		experienceNode[0].innerHTML = text;
 		
 		$(".text").animate({opacity:'1.0'}, 1700);		
-		$(".text").css("visibility", "visible");	
+		$(".text").css("visibility", "visible");
+		$(".text").css("width", (width -25));	
 		
 		$(".picture").animate({opacity: "0.0"},"fast");
 		$(".education").animate({opacity: "0.0"},"fast");
@@ -10911,6 +10914,7 @@ $(document).ready(function () {
 		
 		$(".text").animate({opacity:'1.0'}, 1700);		
 		$(".text").css("visibility", "visible");
+		$(".text").css("width", (width - 25));
 		
 		$(".picture").animate({opacity: "0.0"},"fast");
 		$(".experience").animate({opacity: "0.0"},"fast");
@@ -10947,7 +10951,8 @@ $(document).ready(function () {
 		
 		$(".text").animate({opacity:'1.0'}, 1700);		
 		$(".text").css("visibility", "visible");
-		
+		$(".text").css("width", (width - 25));		
+
 		$(".picture").animate({opacity: "0.0"},"fast");
 		$(".experience").animate({opacity: "0.0"},"fast");
 		$(".education").animate({opacity: "0.0"},"fast");
@@ -10973,6 +10978,7 @@ $(document).ready(function () {
 		
 		$(".text").animate({opacity:'1.0'}, 1700);		
 		$(".text").css("visibility", "visible");
+		$(".text").css("width", (width - 25));
 		
 		$(".picture").animate({opacity: "0.0"},"fast");
 		$(".experience").animate({opacity: "0.0"},"fast");
@@ -11001,6 +11007,7 @@ $(document).ready(function () {
 		
 		$(".text").animate({opacity:'1.0'}, 1700);		
 		$(".text").css("visibility", "visible");
+		$(".text").css("width", (width-25));
 		
 		$(".picture").animate({opacity: "0.0"},"fast");
 		$(".experience").animate({opacity: "0.0"},"fast");
