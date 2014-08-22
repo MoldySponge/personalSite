@@ -10642,8 +10642,8 @@ $(document).ready(function () {
 		fromTopSecond = 15 + squareHeight + 10 + "px";
 		fromTopThird = 30 + (2*squareHeight) + "px";
 		
-		backButtonWidth = (width / 4);
-		backButtonHeight = (height / 4);
+		backButtonWidth = (width / 6);
+		backButtonHeight = (height / 6);
 
 		fontSize = "4em";
 		lineHeight = "1em";		
