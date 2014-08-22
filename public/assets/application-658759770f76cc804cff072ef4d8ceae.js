@@ -10646,18 +10646,20 @@ $(document).ready(function () {
 		backButtonHeight = (height / 4);
 
 		fontSize = "4em";
+		lineHeight = "1em";		
 
 		$("BODY").css("font-size",fontSize);
-		
+		$("BODY").css("line-height", lineHeight);		
+
 		$(".back").css("top", (5 + squareHeight - backButtonHeight));
 		$(".back").css("left", toMiddle);
 
 		$(".text").css("left", fromLeft);
-		$(".text").css("top", fromTopSecond);
+		$(".text").css("top", (45 + squareHeight + "px"));
 		$(".text").css("width", (width - 20));
 		
 		$(".line").css("left", fromLeft);
-		$(".line").css("top", (45 + squareHeight + "px")); 
+		$(".line").css("top", fromTopSecond); 
 
 		$(".picture").css("width", (squareWidth + "px"));
 		$(".picture").css("height", (squareHeight + "px"));
