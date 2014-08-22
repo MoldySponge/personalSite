@@ -10632,8 +10632,8 @@ $(document).ready(function () {
 	}
 	
 	function calculateSquareSize() {
-		squareWidth = ((width - 30) / 2);
-		squareHeight = ((height - 40) / 3);
+		squareWidth = ((width - 28) / 2);
+		squareHeight = ((height - 38) / 3);
 	}
 
 	function setupUI() {
@@ -10642,7 +10642,7 @@ $(document).ready(function () {
 		fromTopSecond = 15 + squareHeight + 10 + "px";
 		fromTopThird = 30 + (2*squareHeight) + "px";
 		
-		backButtonWidth = (width / 9);
+		backButtonWidth = (width / 8);
 		backButtonHeight = (height / 10);
 
 		fontSize = "4em";
@@ -10653,6 +10653,7 @@ $(document).ready(function () {
 		
 		$("li").css("line-height", lineHeight);
 		
+		$("br").css("line-height", lineHeight);
 
 		$(".back").css("top", ((5 + squareHeight - backButtonHeight) + "px"));
 		$(".back").css("left", toMiddle);
@@ -10661,7 +10662,7 @@ $(document).ready(function () {
 
 		$(".text").css("left", fromLeft);
 		$(".text").css("top", (45 + squareHeight + "px"));
-		$(".text").css("width", (width - 20));
+		$(".text").css("width", (width - 25));
 		
 		$(".line").css("left", fromLeft);
 		$(".line").css("top", fromTopSecond); 
@@ -10750,6 +10751,8 @@ $(document).ready(function () {
 		
 		$(".text").animate({opacity:'0.0'}, 1700);		
 		$(".text").css("visibility", "hidden");
+		$(".text").css("height", (squareHeight + "px"));
+		$(".text").css("width", (squareWidth + "px"));
 		
 		$(".intelLogo").animate({opacity:'0.0'});
 		$(".intelLogo").css("visibility", "hidden");
@@ -10793,7 +10796,7 @@ $(document).ready(function () {
 		$(".back").animate({opacity:'1.0'},1600, pictureClicked());
 		$(".back").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:(width-20)},800);
+		$(".line").animate({opacity:'1.0', width:(width-25)},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#000000");
 			
@@ -10833,7 +10836,7 @@ $(document).ready(function () {
 		$(".redlobsterLogo").animate({opacity:'1.0'}, 1600);
 		$(".redlobsterLogo").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:(width-20)},800);
+		$(".line").animate({opacity:'1.0', width:(width-25)},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#339966");
 		
@@ -10881,7 +10884,7 @@ $(document).ready(function () {
 		$(".wascLogo").animate({opacity:'1.0'}, 1600);
 		$(".wascLogo").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:(width - 20)},800);
+		$(".line").animate({opacity:'1.0', width:(width - 25)},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#336699");
 		
@@ -10931,7 +10934,7 @@ $(document).ready(function () {
 		$(".postgresqlLogo").animate({opacity:'1.0'},1600);
 		$(".postgresqlLogo").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:(width - 20)},800);
+		$(".line").animate({opacity:'1.0', width:(width - 25)},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#FFCC66");
 		
@@ -10959,7 +10962,7 @@ $(document).ready(function () {
 		$(".back").animate({opacity:'1.0'},1600, resumeClicked());
 		$(".back").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:(width - 20)},800);
+		$(".line").animate({opacity:'1.0', width:(width - 25)},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#663399");
 		
@@ -10986,7 +10989,7 @@ $(document).ready(function () {
 		$(".back").animate({opacity:'1.0'},1600, contactClicked());
 		$(".back").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:(width - 20)},800);
+		$(".line").animate({opacity:'1.0', width:(width - 25)},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#780000");
 		
