@@ -10594,6 +10594,7 @@ $(document).ready(function () {
 	var width;
 	var height;
 	var fromLeft = "10px";
+	var toMiddle;
 	var fromTop = "10px";
 	var squareWidth;
 	var squareHeight; 
@@ -10612,6 +10613,11 @@ $(document).ready(function () {
 		if(width <= 1000) {
 			setupUI();
 			$(".picture").animate({left:fromLeft, opacity:'1.0'}, 750);
+			$(".experience").animate({left:toMiddle, opacity:'1.0'}, 750);
+			/*$(".education".animate({left:fromLeft, opacity:'1.0'}, 1000);
+			$(".website").animate({left:toMiddle, opacity:'1.0'}, 1000);
+			$(".resume").animate({left:fromLeft, opacity:'1.0'}, 1200);
+			$(".contact").animate({left:toMiddle, opacity:'1.0'}, 1200);*/
 		}
 	});
 
@@ -10626,8 +10632,20 @@ $(document).ready(function () {
 	}
 
 	function setupUI() {
+		toMiddle = 10 + squareWidth + 10;
+		toMiddle = toMiddle + "px";
 		$(".picture").css("width", squareWidth);
 		$(".picture").css("height", squareHeight);
+		$(".experience").css("width", squareWidth);
+		$(".experience").css( "height", squareHeight);
+		$(".education").css("width", squareWidth);
+		$(".education").css("height", squareHeight);
+		$(".website").css("width", squareWidth);
+		$(".website").css("height", squareHeight);
+		$(".resume").css("width", squareWidth);
+		$(".resume").css("height", squareHeight);
+		$(".contact").css("width", squareWidth);
+		$(".contact").css("height", squareHeight);
 	}
 	
 	/*
