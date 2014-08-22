@@ -10602,6 +10602,8 @@ $(document).ready(function () {
 	var squareHeight; 
 	var fromRight = "100%";
 	var fontSize;
+	var backButtonWidth;
+	var backButtonHeight;
 	$(window).load(function () {                
 		getWindowSize();
 		calculateSquareSize();
@@ -10640,10 +10642,16 @@ $(document).ready(function () {
 		fromTopSecond = 15 + squareHeight + 10 + "px";
 		fromTopThird = 30 + (2*squareHeight) + "px";
 		
+		backButtonWidth = (width / 4);
+		backButtonHeight = (height / 4);
+
 		fontSize = "4em";
 
 		$("BODY").css("font-size",fontSize);
 		
+		$(".back").css("top", (fromTopSecond - backButtonHeight  - 20));
+		$(".back").css("left", toMiddle);
+
 		$(".picture").css("width", (squareWidth + "px"));
 		$(".picture").css("height", (squareHeight + "px"));
 		$(".experience").css("width", (squareWidth + "px"));
@@ -10764,7 +10772,7 @@ $(document).ready(function () {
 	
 	//Picture clicked
 	$(".picture").click(function () {
-		$(".picture").animate({left:'33%'},800);
+		$(".picture").animate({left:fromLeft},800);
 		
 		$(".back").animate({opacity:'1.0'},1600, pictureClicked());
 		$(".back").css("visibility", "visible");
