@@ -10591,17 +10591,40 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 */
 
 $(document).ready(function () {
-	$(window).load(function () {
-		var width = $( window ).width();
-		var nameNode = document.getElementsByClassName('picture');
-		nameNode[0].innerHTML = width;
-		$(".picture").animate({left:'33%', opacity:'1.0'}, 750);
-		$(".experience").animate({left:'45%', opacity:'1.0'}, 750);
-		$(".education").animate({left:'33%', opacity:'1.0'}, 1000);
-		$(".website").animate({left:'45%', opacity:'1.0'}, 1000);
-		$(".resume").animate({left:'33%', opacity:'1.0'}, 1200);
-		$(".contact").animate({left:'45%', opacity:'1.0'}, 1200);			
+	var width;
+	var height;
+	var fromLeft = "10px";
+	var squareWidth; 
+	var fromRight = "100%";
+	$(window).load(function () {                
+		getWindowSize();
+		calculateSquareSize();
+		if(width > 1000) {
+			$(".picture").animate({left:'33%', opacity:'1.0'}, 750);
+			$(".experience").animate({left:'45%', opacity:'1.0'}, 750);
+			$(".education").animate({left:'33%', opacity:'1.0'}, 1000);
+			$(".website").animate({left:'45%', opacity:'1.0'}, 1000);
+			$(".resume").animate({left:'33%', opacity:'1.0'}, 1200);
+			$(".contact").animate({left:'45%', opacity:'1.0'}, 1200);			
+		}
+		if(width <= 1000) {
+			setupUI();
+			$(".picture").animate({left:fromLeft, opacity:'1.0'}, 750);
+		}
 	});
+
+	function getWindowSize() {
+		width = $( window ).width();
+		height = $( window ).height();		
+	}
+	
+	function calculateSquareSize() {
+		squareWidth = ((width - 30) / 2);
+	}
+
+	function setupUI() {
+		$(".picture").css("width", "squareWidth","height","squareWidth");
+	}
 	
 	/*
 		Mouseover animations for tile effects	
