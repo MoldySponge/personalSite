@@ -10639,19 +10639,26 @@ $(document).ready(function () {
 		fromTopSecond = 10 + squareHeight + 10 + "px";
 		fromTopThird = 30 + squareHeight + "px";
 		
-		$(".picture").css("width", squareWidth + "px");
-		$(".picture").css("height", squareHeight + "px");
-		$(".experience").css("width", squareWidth + "px");
-		$(".experience").css( "height", squareHeight + "px");
+		$(".picture").css("width", (squareWidth + "px"));
+		$(".picture").css("height", (squareHeight + "px"));
+		$(".experience").css("width", (squareWidth + "px"));
+		$(".experience").css( "height", (squareHeight + "px"));
+
 		$(".education").css("width", (squareWidth + "px"));
-		$(".education").css("height", (squareHeight + "px");
+		$(".education").css("height", (squareHeight + "px"));
 		$(".education").css("top", fromTopSecond);
-		$(".website").css("width", squareWidth + "px");
-		$(".website").css("height", squareHeight + "px", "top", fromTopSecond);
-		$(".resume").css("width", squareWidth + "px");
-		$(".resume").css("height", squareHeight + "px", "top", fromTopThird);
-		$(".contact").css("width", squareWidth + "px");
-		$(".contact").css("height", squareHeight + "px", "top", fromTopThird);
+
+		$(".website").css("width", (squareWidth + "px"));
+		$(".website").css("height", (squareHeight + "px"));
+		$(".website").css("top", fromTopSecond);		
+
+		$(".resume").css("width", (squareWidth + "px"));
+		$(".resume").css("height", (squareHeight + "px"));
+		$(".resume").css("top", fromTopThird);
+
+		$(".contact").css("width", (squareWidth + "px"));
+		$(".contact").css("height", (squareHeight + "px"));
+		$(".contact").css("top", fromTopThird);
 	}
 	
 	/*
