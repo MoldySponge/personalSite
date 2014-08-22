@@ -10653,8 +10653,10 @@ $(document).ready(function () {
 		
 		
 
-		$(".back").css("top", (5 + squareHeight));
+		$(".back").css("top", ((5 + squareHeight - backButtonHeight) + "px"));
 		$(".back").css("left", toMiddle);
+		$(".back").css("width", (backButtonWidth + "px"));
+		$(".back").css("height", (backButtonHeight + "px"));
 
 		$(".text").css("left", fromLeft);
 		$(".text").css("top", (45 + squareHeight + "px"));
@@ -10665,7 +10667,7 @@ $(document).ready(function () {
 
 		$(".picture").css("width", (squareWidth + "px"));
 		$(".picture").css("height", (squareHeight + "px"));
-		$(".picture").css("font-size", "2.5em");
+		$(".picture").css("font-size", ".5em");
 
 		$(".experience").css("width", (squareWidth + "px"));
 		$(".experience").css( "height", (squareHeight + "px"));

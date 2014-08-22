@@ -65,8 +65,10 @@ $(document).ready(function () {
 		
 		
 
-		$(".back").css("top", (5 + squareHeight - backButtonHeight + "px"));
+		$(".back").css("top", ((5 + squareHeight - backButtonHeight) + "px"));
 		$(".back").css("left", toMiddle);
+		$(".back").css("width", (backButtonWidth + "px"));
+		$(".back").css("height", (backButtonHeight + "px"));
 
 		$(".text").css("left", fromLeft);
 		$(".text").css("top", (45 + squareHeight + "px"));
