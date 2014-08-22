@@ -10642,14 +10642,18 @@ $(document).ready(function () {
 		fromTopSecond = 15 + squareHeight + 10 + "px";
 		fromTopThird = 30 + (2*squareHeight) + "px";
 		
-		backButtonWidth = (width / 4);
-		backButtonHeight = (height / 4);
+		backButtonWidth = (width / 2);
+		backButtonHeight = (height / 2);
 
 		fontSize = "4em";
+		lineHeight = "1em";		
 
 		$("BODY").css("font-size",fontSize);
+		$("BODY").css("line-height", lineHeight);		
 		
-		$(".back").css("top", (5 + squareHeight - backButtonHeight));
+		
+
+		$(".back").css("top", (5 + squareHeight));
 		$(".back").css("left", toMiddle);
 
 		$(".text").css("left", fromLeft);
@@ -10661,6 +10665,8 @@ $(document).ready(function () {
 
 		$(".picture").css("width", (squareWidth + "px"));
 		$(".picture").css("height", (squareHeight + "px"));
+		$(".picture").css("font-size", "2.5em");
+
 		$(".experience").css("width", (squareWidth + "px"));
 		$(".experience").css( "height", (squareHeight + "px"));
 
