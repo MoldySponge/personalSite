@@ -10607,7 +10607,7 @@ $(document).ready(function () {
 	$(window).load(function () {                
 		getWindowSize();
 		calculateSquareSize();
-		if(width > 1000) {
+		if(width > 1200) {
 			$(".picture").animate({left:'33%', opacity:'1.0'}, 750);
 			$(".experience").animate({left:'45%', opacity:'1.0'}, 750);
 			$(".education").animate({left:'33%', opacity:'1.0'}, 1000);
@@ -10615,7 +10615,7 @@ $(document).ready(function () {
 			$(".resume").animate({left:'33%', opacity:'1.0'}, 1200);
 			$(".contact").animate({left:'45%', opacity:'1.0'}, 1200);			
 		}
-		if(width <= 1000) {
+		if(width <= 1200) {
 			setupUI();
 			$(".picture").animate({left:fromLeft, opacity:'1.0'}, 750);
 			$(".experience").animate({left:toMiddle, opacity:'1.0'}, 750);
@@ -10651,6 +10651,9 @@ $(document).ready(function () {
 		$("BODY").css("font-size",fontSize);
 		$("BODY").css("line-height", lineHeight);		
 		
+		$("ul").css("line-height", lineHeight);
+		$("ul").css("margin-top", lineHeight);	
+	
 		$("li").css("line-height", lineHeight);
 		
 		$("br").css("line-height", lineHeight);
