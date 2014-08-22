@@ -10592,9 +10592,9 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 
 $(document).ready(function () {
 	$(window).load(function () {
-		var height = $( window ).height();
+		var width = $( window ).width();
 		var nameNode = document.getElementsByClassName('picture');
-		nameNode[0].innerHTML = height;
+		nameNode[0].innerHTML = width;
 		$(".picture").animate({left:'33%', opacity:'1.0'}, 750);
 		$(".experience").animate({left:'45%', opacity:'1.0'}, 750);
 		$(".education").animate({left:'33%', opacity:'1.0'}, 1000);
