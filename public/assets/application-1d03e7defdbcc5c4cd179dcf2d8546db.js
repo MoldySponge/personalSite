@@ -10649,14 +10649,15 @@ $(document).ready(function () {
 
 		$("BODY").css("font-size",fontSize);
 		
-		$(".back").css("top", (fromTopSecond - backButtonHeight  - 20));
+		$(".back").css("top", (5 + squareHeight - backButtonHeight));
 		$(".back").css("left", toMiddle);
 
 		$(".text").css("left", fromLeft);
-		$(".text").css("top", fromTopSecond);
+		$(".text").css("top", (45 + squareHeight + "px"));
+		$(".text").css("width", (width - 20));
 		
 		$(".line").css("left", fromLeft);
-		$(".line").css("top", (45 + squareHeight + "px")); 
+		$(".line").css("top", fromTopSecond); 
 
 		$(".picture").css("width", (squareWidth + "px"));
 		$(".picture").css("height", (squareHeight + "px"));
