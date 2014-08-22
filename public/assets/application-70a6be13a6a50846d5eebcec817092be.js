@@ -10591,17 +10591,25 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 */
 
 $(document).ready(function () {
-	$(window).load(function () {
-		var width = $( window ).width();
-		var nameNode = document.getElementsByClassName('picture');
-		nameNode[0].innerHTML = height;
-		$(".picture").animate({left:'33%', opacity:'1.0'}, 750);
-		$(".experience").animate({left:'45%', opacity:'1.0'}, 750);
-		$(".education").animate({left:'33%', opacity:'1.0'}, 1000);
-		$(".website").animate({left:'45%', opacity:'1.0'}, 1000);
-		$(".resume").animate({left:'33%', opacity:'1.0'}, 1200);
-		$(".contact").animate({left:'45%', opacity:'1.0'}, 1200);			
+	var width;
+	var height;
+	$(window).load(function () {                
+		getWindowSize();
+		
+		if(width > 1000) {
+			$(".picture").animate({left:'33%', opacity:'1.0'}, 750);
+			$(".experience").animate({left:'45%', opacity:'1.0'}, 750);
+			$(".education").animate({left:'33%', opacity:'1.0'}, 1000);
+			$(".website").animate({left:'45%', opacity:'1.0'}, 1000);
+			$(".resume").animate({left:'33%', opacity:'1.0'}, 1200);
+			$(".contact").animate({left:'45%', opacity:'1.0'}, 1200);			
+		}
 	});
+
+	function getWindowSize() {
+		width = $( window ).width();
+		height = $( window ).height();		
+	}
 	
 	/*
 		Mouseover animations for tile effects	
