@@ -54,8 +54,8 @@ $(document).ready(function () {
 		fromTopSecond = 15 + squareHeight + 10 + "px";
 		fromTopThird = 30 + (2*squareHeight) + "px";
 		
-		backButtonWidth = (width / 6);
-		backButtonHeight = (height / 6);
+		backButtonWidth = (width / 10);
+		backButtonHeight = (height / 10);
 
 		fontSize = "4em";
 		lineHeight = "1em";		
@@ -63,6 +63,7 @@ $(document).ready(function () {
 		$("BODY").css("font-size",fontSize);
 		$("BODY").css("line-height", lineHeight);		
 		
+		$("ul").css("line-height", lineHeight);
 		
 
 		$(".back").css("top", ((5 + squareHeight - backButtonHeight) + "px"));
