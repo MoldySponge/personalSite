@@ -20,6 +20,7 @@ $(document).ready(function () {
 	var amproFromLeft;
 	var dennysFromLeft;
 	var redlobsterFromLeft;
+	var mastersFromLeft;
 
 	$(window).load(function () {                
 		getWindowSize();
@@ -49,8 +50,10 @@ $(document).ready(function () {
 	}
 	
 	function calculateSquareSize() {
-		squareWidth = ((width - 28) / 2);
-		squareHeight = ((height - 38) / 3);
+		if(width <= 1200) {
+			squareWidth = ((width - 28) / 2);
+			squareHeight = ((height - 38) / 3);
+		}
 	}
 
 	function setupUI() {
@@ -69,6 +72,7 @@ $(document).ready(function () {
 		amproFromLeft = (squareWidth + 140 + "px");
 		dennysFromLeft = (squareWidth + 20 + "px");
 		redlobsterFromLeft = (squareWidth + 240 + "px");		
+		mastersFromLeft = (squareWidth + 20 + "px");
 
 		$("BODY").css("font-size",fontSize);
 				
@@ -111,6 +115,7 @@ $(document).ready(function () {
 		$(".amproLogo").css("left", amproFromLeft);
 		$(".dennysLogo").css("left", dennysFromLeft);
 		$(".redlobsterLogo").css("left", redlobsterFromLeft);
+		$(".mastersLogo").css("left", mastersFromLeft);
 	}
 	
 	/*
