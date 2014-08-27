@@ -192,8 +192,6 @@ $(document).ready(function () {
 		
 		$(".mastersLogo").animate({opacity:'0.0'});
 		$(".mastersLogo").css("visibility", "hidden");
-		$(".wascLogo").animate({opacity:'0.0'});
-		$(".wascLogo").css("visibility", "hidden");
 		
 		$(".html5css3Logo").animate({opacity:'0.0'},1600);
 		$(".html5css3Logo").css("visibility", "hidden");		
@@ -310,8 +308,6 @@ $(document).ready(function () {
 		
 		$(".mastersLogo").animate({opacity:'1.0'}, 1600);
 		$(".mastersLogo").css("visibility", "visible");
-		$(".wascLogo").animate({opacity:'1.0'}, 1600);
-		$(".wascLogo").css("visibility", "visible");
 		
 		$(".line").animate({opacity:'1.0', width:(width - 25)},800);
 		$(".line").css("visibility", "visible");
@@ -320,7 +316,7 @@ $(document).ready(function () {
 		var text = "<strong><div class='educationTextHeading'>EDUCATION</div></strong><br>Information on my education at The Master's College, it's full WASC authority," +
 		"and some accolaids of the college.<br><br>" +
 		"<div class='educationTextHeading'>Accreditation</div>The Master's College has full authority to award Bachelor's and Master's Degrees in all its disciplines as determined by the Western Association of Schools and Colleges (WASC)." +
-		"More information can be found at <a href='www.wascsenior.org'>www.wascsenior.org</a><br><br><br><br><br><br><br>" +
+		"More information can be found at <a href='www.wascsenior.org'>www.wascsenior.org</a><br><img src='<%= asset_path("wasc.png") %>'><br>" +
 		"<div class='educationTextHeading'>Accolaides</div> Morever, The Master's College is ranked nationally and regionally exceptionally well and for 15 consecutive years has been ranked among First tier colleges by" +
 		" U.S. News and World Report.<br> <ul><li><a href='http://www.masters.edu/the-master%27s-college-garners-us-news-world-report-2-ranking.aspx'>Ranked #2 Among Western Regional Colleges (2012)</a><br>*among 371 colleges</li>" +
 		"<li><a href='http://www.masters.edu/college-ranks-in-%E2%80%9Cfirst-tier%E2%80%9D-in-latest-us-news-and-world-report-rankings.aspx'>Ranked #4 Among Western Regional Colleges (2013)</a><br>*among 370 colleges</li>" +
@@ -370,7 +366,7 @@ $(document).ready(function () {
 		
 		var text = "<strong><div class='websiteTextHeading'>WEBSITE INFORMATION</div></strong><br>This website employs the use of many different technologies.<br>" +
 		"<ul><li>Animations, fonts, and colors, are all configured using CSS3.</li>" +
-		"<li>Page content is updated dynamically using AJAX from a PostgreSQL database.</li>" +
+		"<!--<li>Page content is updated dynamically using AJAX from a PostgreSQL database.</li>-->" +
 		"<li>The entire site uses a Model View Controller (MVC) of Ruby on Rails for quick and easy changes.</li></ul>";
 		websiteNode = document.getElementsByClassName('text');
 		websiteNode[0].innerHTML = text;
