@@ -359,33 +359,6 @@ $(document).ready(function () {
 	
 	//Website clicked
 	$(".website").click(function () {
-		
-		$(".website").animate({top:fromTop},400);
-		$(".website").animate({left:fromLeft},800);
-		
-		$(".back").animate({opacity:'1.0'},1600, websiteClicked());
-		$(".back").css("visibility", "visible");
-		
-		$(".html5css3Logo").animate({opacity:'1.0'},1600);
-		$(".html5css3Logo").css("visibility", "visible");
-		$(".html5css3Logo").css("left", html5css3FromLeft);
-
-		$(".rubyonrailsLogo").animate({opacity:'1.0'},1600);
-		$(".rubyonrailsLogo").css("visibility", "visible");
-		$(".rubyonrailsLogo").css("left", rubyonrailsFromLeft);
-
-		$(".postgresqlLogo").animate({opacity:'1.0'},1600);
-		$(".postgresqlLogo").css("visibility", "visible");
-		$(".postgresqlLogo").css("left", postgresqlFromLeft);
-                                        
-                websiteNode = document.getElementsByClassName('text');		
-		websiteNode[0].innerHTML = "text";
-                                        
-                $(".picture").animate({opacity: "0.0"},"fast");
-		$(".experience").animate({opacity: "0.0"},"fast");
-		$(".education").animate({opacity: "0.0"},"fast");
-		$(".resume").animate({opacity: "0.0"},"fast");
-		$(".contact").animate({opacity: "0.0"},"fast");
 	});
 	
 	//Resume clicked
