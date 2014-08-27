@@ -16,6 +16,11 @@ $(document).ready(function () {
 	var fontSize;
 	var backButtonWidth;
 	var backButtonHeight;
+	var intelFromLeft;
+	var amproFromLeft;
+	var dennysFromLeft;
+	var redlobsterFromLeft;
+
 	$(window).load(function () {                
 		getWindowSize();
 		calculateSquareSize();
@@ -58,7 +63,12 @@ $(document).ready(function () {
 		backButtonHeight = (height / 10);
 
 		fontSize = "4em";
-		lineHeight = "2em";		
+		lineHeight = "2em";
+
+		intelFromLeft = (squareWidth + 20 + "px");
+		amproFromLeft = (squareWidth + 140 + "px");
+		dennysFromLeft = (squareWidth + 20 + "px");
+		redlobsterFromLeft = (squareWidth + 240 + "px");		
 
 		$("BODY").css("font-size",fontSize);
 				
@@ -97,7 +107,7 @@ $(document).ready(function () {
 		$(".contact").css("height", (squareHeight + "px"));
 		$(".contact").css("top", fromTopThird);
 
-		$(".intelLogo").css("left", (squareWidth + 30 + "px"));
+		$(".intelLogo").css("left", intelFromLeft);
 	}
 	
 	/*
