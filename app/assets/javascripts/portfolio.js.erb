@@ -376,25 +376,12 @@ $(document).ready(function () {
 
 		$(".postgresqlLogo").animate({opacity:'1.0'},1600);
 		$(".postgresqlLogo").css("visibility", "visible");
-		$(".postgresqlLogo").css("left", postgresqlFromLeft);		
-		
-		$(".line").animate({opacity:'1.0', width:lineWidth},800);
-		$(".line").css("visibility", "visible");
-		$(".line").css("background-color", "#FFCC66");		
-		
-		var text = "<strong><div class='websiteTextHeading'>WEBSITE INFORMATION</div></strong><br>This website employs the use of many different technologies.<br>" +
-		"<ul><li>Animations, fonts, and colors, are all configured using CSS3.</li>" +
-		"<li>Page content is updated dynamically using AJAX from a PostgreSQL database.</li>" +
-		"<li>The entire site uses a Model View Controller (MVC) of Ruby on Rails for quick and easy changes.</li></ul>";
-		
-		websiteNode = document.getElementsByClassName('text');
-		websiteNode[0].innerHTML = text;
-		
-		$(".text").animate({opacity:'1.0'}, 1700);		
-		$(".text").css("visibility", "visible");
-		$(".text").css("width", textWidth);		
-
-		$(".picture").animate({opacity: "0.0"},"fast");
+		$(".postgresqlLogo").css("left", postgresqlFromLeft);
+                                        
+                websiteNode = document.getElementsByClassName('text');		
+		websiteNode[0].innerHTML = "text";
+                                        
+                $(".picture").animate({opacity: "0.0"},"fast");
 		$(".experience").animate({opacity: "0.0"},"fast");
 		$(".education").animate({opacity: "0.0"},"fast");
 		$(".resume").animate({opacity: "0.0"},"fast");
