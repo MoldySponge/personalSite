@@ -24,7 +24,8 @@ $(document).ready(function () {
 	var html5css3FromLeft;
 	var rubyonrailsFromLeft;
 	var postgresqlLogo;	
-
+	var lineWidth;
+	var textWidth;
 
 	$(window).load(function () {                
 		getWindowSize();
@@ -57,6 +58,8 @@ $(document).ready(function () {
 		if(width <= 1200) {
 			squareWidth = ((width - 28) / 2);
 			squareHeight = ((height - 38) / 3);
+			lineWidth = (width - 25);
+			textWidth = (width - 25);
 		}
 	}
 
@@ -228,7 +231,7 @@ $(document).ready(function () {
 		$(".back").animate({opacity:'1.0'},1600, pictureClicked());
 		$(".back").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:(width-25)},800);
+		$(".line").animate({opacity:'1.0', width:lineWidth},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#000000");
 			
@@ -243,7 +246,7 @@ $(document).ready(function () {
 		
 		$(".text").animate({opacity:'1.0'}, 1700);		
 		$(".text").css("visibility", "visible");
-		$(".text").css("width", (width - 25));
+		$(".text").css("width", textWidth);
 		
 		$(".experience").animate({opacity: "0.0"},"fast");
 		$(".education").animate({opacity: "0.0"},"fast");
@@ -269,7 +272,7 @@ $(document).ready(function () {
 		$(".redlobsterLogo").animate({opacity:'1.0'}, 1600);
 		$(".redlobsterLogo").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:(width-25)},800);
+		$(".line").animate({opacity:'1.0', width:lineWidth},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#339966");
 		
@@ -297,7 +300,7 @@ $(document).ready(function () {
 		
 		$(".text").animate({opacity:'1.0'}, 1700);		
 		$(".text").css("visibility", "visible");
-		$(".text").css("width", (width -25));	
+		$(".text").css("width", textWidth);	
 		
 		$(".picture").animate({opacity: "0.0"},"fast");
 		$(".education").animate({opacity: "0.0"},"fast");
@@ -316,7 +319,7 @@ $(document).ready(function () {
 		$(".mastersLogo").animate({opacity:'1.0'}, 1600);
 		$(".mastersLogo").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:(width - 25)},800);
+		$(".line").animate({opacity:'1.0', width:lineWidth},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#336699");
 		
@@ -343,7 +346,7 @@ $(document).ready(function () {
 		
 		$(".text").animate({opacity:'1.0'}, 1700);		
 		$(".text").css("visibility", "visible");
-		$(".text").css("width", (width - 25));
+		$(".text").css("width", textWidth);
 		
 		$(".picture").animate({opacity: "0.0"},"fast");
 		$(".experience").animate({opacity: "0.0"},"fast");
@@ -372,7 +375,7 @@ $(document).ready(function () {
 		$(".postgresqlLogo").css("visibility", "visible");
 		$(".postgresqlLogo").css("left", postgresqlFromLeft);		
 		
-		$(".line").animate({opacity:'1.0', width:(width - 25)},800);
+		$(".line").animate({opacity:'1.0', width:lineWidth},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#FFCC66");
 		
@@ -385,7 +388,7 @@ $(document).ready(function () {
 		
 		$(".text").animate({opacity:'1.0'}, 1700);		
 		$(".text").css("visibility", "visible");
-		$(".text").css("width", (width - 25));		
+		$(".text").css("width", textWidth);		
 
 		$(".picture").animate({opacity: "0.0"},"fast");
 		$(".experience").animate({opacity: "0.0"},"fast");
@@ -401,7 +404,7 @@ $(document).ready(function () {
 		$(".back").animate({opacity:'1.0'},1600, resumeClicked());
 		$(".back").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:(width - 25)},800);
+		$(".line").animate({opacity:'1.0', width:lineWidth},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#663399");
 		
@@ -412,7 +415,7 @@ $(document).ready(function () {
 		
 		$(".text").animate({opacity:'1.0'}, 1700);		
 		$(".text").css("visibility", "visible");
-		$(".text").css("width", (width - 25));
+		$(".text").css("width", textWidth);
 		
 		$(".picture").animate({opacity: "0.0"},"fast");
 		$(".experience").animate({opacity: "0.0"},"fast");
@@ -429,7 +432,7 @@ $(document).ready(function () {
 		$(".back").animate({opacity:'1.0'},1600, contactClicked());
 		$(".back").css("visibility", "visible");
 		
-		$(".line").animate({opacity:'1.0', width:(width - 25)},800);
+		$(".line").animate({opacity:'1.0', width:lineWidth},800);
 		$(".line").css("visibility", "visible");
 		$(".line").css("background-color", "#780000");
 		
@@ -441,7 +444,7 @@ $(document).ready(function () {
 		
 		$(".text").animate({opacity:'1.0'}, 1700);		
 		$(".text").css("visibility", "visible");
-		$(".text").css("width", (width-25));
+		$(".text").css("width", textWidth);
 		
 		$(".picture").animate({opacity: "0.0"},"fast");
 		$(".experience").animate({opacity: "0.0"},"fast");
