@@ -21,6 +21,10 @@ $(document).ready(function () {
 	var dennysFromLeft;
 	var redlobsterFromLeft;
 	var mastersFromLeft;
+	var html5css3FromLeft;
+	var rubyonrailsFromLeft;
+	var postgresqlLogo;	
+
 
 	$(window).load(function () {                
 		getWindowSize();
@@ -73,6 +77,9 @@ $(document).ready(function () {
 		dennysFromLeft = (squareWidth + 20 + "px");
 		redlobsterFromLeft = (squareWidth + 240 + "px");		
 		mastersFromLeft = (squareWidth + 20 + "px");
+		html5css3FromLeft = (squareWidth + 20 + "px");
+		rubyonrailsFromLeft = (squareWidth + 20 + "px");
+		postgresqlFromLeft = (squareWidth + 140 + "px");
 
 		$("BODY").css("font-size",fontSize);
 				
@@ -354,11 +361,16 @@ $(document).ready(function () {
 		$(".back").css("visibility", "visible");
 		
 		$(".html5css3Logo").animate({opacity:'1.0'},1600);
-		$(".html5css3Logo").css("visibility", "visible");		
+		$(".html5css3Logo").css("visibility", "visible");
+		$(".html5css3Logo").css("left", html5css3FromLeft);
+		
 		$(".rubyonrailsLogo").animate({opacity:'1.0'},1600);
 		$(".rubyonrailsLogo").css("visibility", "visible");
+		$(".rubyonrailsLogo").css("left", rubyonrailsFromLeft);
+
 		$(".postgresqlLogo").animate({opacity:'1.0'},1600);
 		$(".postgresqlLogo").css("visibility", "visible");
+		$(".postgresqlLogo").css("left", postgresqlFromLeft);		
 		
 		$(".line").animate({opacity:'1.0', width:(width - 25)},800);
 		$(".line").css("visibility", "visible");
