@@ -357,22 +357,37 @@ $(document).ready(function () {
 	});
 	
 	//Website clicked
-	$(".website").click(function () {$(".website").animate({top:fromTop},400);$(".website").animate({left:fromLeft},800);
-		$(".back").animate({opacity:'1.0'},1600, websiteClicked());$(".back").css("visibility", "visible");
+	$(".website").click(function () {
 		
-		$(".html5css3Logo").animate({opacity:'1.0'},1600);$(".html5css3Logo").css("visibility", "visible");
-		$(".html5css3Logo").css("left", html5css3FromLeft);$(".rubyonrailsLogo").animate({opacity:'1.0'},1600);
-		$(".rubyonrailsLogo").css("visibility", "visible");$(".rubyonrailsLogo").css("left", rubyonrailsFromLeft);
+		$(".website").animate({top:fromTop},400);
+		$(".website").animate({left:fromLeft},800);
+		
+		$(".back").animate({opacity:'1.0'},1600, websiteClicked());
+		$(".back").css("visibility", "visible");
+		
+		$(".html5css3Logo").animate({opacity:'1.0'},1600);
+		$(".html5css3Logo").css("visibility", "visible");
+		$(".html5css3Logo").css("left", html5css3FromLeft);
 
-		$(".postgresqlLogo").animate({opacity:'1.0'},1600);$(".postgresqlLogo").css("visibility", "visible");
+		$(".rubyonrailsLogo").animate({opacity:'1.0'},1600);
+		$(".rubyonrailsLogo").css("visibility", "visible");
+		$(".rubyonrailsLogo").css("left", rubyonrailsFromLeft);
+
+		$(".postgresqlLogo").animate({opacity:'1.0'},1600);
+		$(".postgresqlLogo").css("visibility", "visible");
 		$(".postgresqlLogo").css("left", postgresqlFromLeft);		
-		$(".line").animate({opacity:'1.0', width:lineWidth},800);$(".line").css("visibility", "visible");
-		$(".line").css("background-color", "#FFCC66");		
+		
+		//$(".line").animate({opacity:'1.0', width:lineWidth},800);
+		//$(".line").css("visibility", "visible");
+		//$(".line").css("background-color", "#FFCC66");		
+		
 		var text = "<strong><div class='websiteTextHeading'>WEBSITE INFORMATION</div></strong><br>This website employs the use of many different technologies.<br>" +
 		"<ul><li>Animations, fonts, and colors, are all configured using CSS3.</li>" +
-		"<!-- <li>Page content is updated dynamically using AJAX from a PostgreSQL database.</li> -->" +
+		"<li>Page content is updated dynamically using AJAX from a PostgreSQL database.</li>" +
 		"<li>The entire site uses a Model View Controller (MVC) of Ruby on Rails for quick and easy changes.</li></ul>";
-		websiteNode = document.getElementsByClassName('text');websiteNode[0].innerHTML = text;
+		
+		websiteNode = document.getElementsByClassName('text');
+		websiteNode[0].innerHTML = text;
 		
 		$(".text").animate({opacity:'1.0'}, 1700);		
 		$(".text").css("visibility", "visible");
